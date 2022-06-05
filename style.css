@@ -1,0 +1,26 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  position: relative;
+}
+
+main:after {
+  content: '';
+  box-shadow: 0 0 200px rgb(0 0 0 / 80%) inset;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  box-shadow: 0 0 200px rgb(0 0 0 / 80%) inset;
+}
+
+canvas {
+  pointer-events: auto;
+  display: block;
+}
