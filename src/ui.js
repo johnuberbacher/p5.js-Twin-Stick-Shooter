@@ -10,6 +10,7 @@ class UI {
         fill(218, 210, 192, 200);
         rect(180, 70, 300, 70);
         pop();
+        
         push();
         textFont(fontRegular);
         textSize(16);
