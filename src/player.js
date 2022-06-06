@@ -39,7 +39,7 @@ class Player {
       ySpeed = 4;
     }
     this.pos.add(xSpeed, ySpeed);
-    this.angle = atan2(mouseY - this.pos.y, mouseX - this.pos.x); // add this
+    this.angle = atan2(mouseY - this.pos.y, mouseX - this.pos.x);
   }
 
   shoot() {

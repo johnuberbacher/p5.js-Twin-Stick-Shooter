@@ -1,4 +1,6 @@
 class UI {
+    constructor() {
+    }
     draw() {
         push();
         noStroke();
@@ -10,7 +12,7 @@ class UI {
         fill(218, 210, 192, 200);
         rect(180, 70, 300, 70);
         pop();
-        
+
         push();
         textFont(fontRegular);
         textSize(16);
@@ -27,6 +29,14 @@ class UI {
         noStroke();
         fill(218, 210, 192, 200);
         rect(windowWidth - 70, 70, 70, 70);
+        pop();
+
+        push();
+        textFont(fontRegular);
+        textStyle(BOLD);
+        textSize(16);
+        fill('#554e40');
+        text(level + 1, windowWidth - 70, 78);
         pop();
 
     }
