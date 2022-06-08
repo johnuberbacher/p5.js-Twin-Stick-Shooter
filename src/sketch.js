@@ -2,7 +2,15 @@ let player;
 let pauseMenu;
 let enemies = [];
 let levels = [
-  [1, 0], [5, 0], [4, 1], [8, 2], [10, 4], [10, 7], [15, 10],
+  [1, 0], 
+  [5, 0], 
+  [4, 1], 
+  [8, 2], 
+  [10, 4], 
+  [10, 7], 
+  [10, 10],
+  [5, 15],
+  [0, 20],
 ];
 let level = 0;
 let levelReady = false;
@@ -18,7 +26,7 @@ let paused = false;
 let gameOverScreen = false;
 let nextLevelScreen = false;
 
-let randSong =  Math.floor(Math.random() * (4 - 1 + 1)) + 1; 
+let randSong = Math.floor(Math.random() * (4 - 1 + 1)) + 1;
 console.log(Math.floor(Math.random() * (4 - 1 + 1)) + 1);
 
 function preload() {
